@@ -1,23 +1,41 @@
 * {
-    font-family: Helvetica, sans-serif;
-    background-color: bisque;
+    /* Helvetica as main font and Arial as fallback, because these are more accessible to visually impaired users */
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
     text-align: center;
+    margin: 0px;
 }
 
-#title {
+body {
+    background-color: hsla(32, 46%, 80%, 1);
+}
+
+h1 {
+    display: inline-block;
+    font-size: 18px;
     text-align: center;
-    margin: auto;
+    color: tomato;
+    margin: 15px 5px;
+    padding: 10px 75px;
+    border: 0.25em solid;
+    border-radius: 50%;
+}
+
+h2 {
+    padding: 1em;
 }
 
 .dropdown {
     display: inline-block;
+    padding-bottom: 1em;
 }
 
 .dropdown button {
-    background-color: rgb(240, 160, 50);
-    color: rgb(228, 224, 29);
+    background-color: hsla(61, 84%, 53%, 0.301);
+    color: tomato;
+    font-weight: bold;
     padding: 10px 15px;
-    border: none;
+    border: 0.15em solid hsla(24, 92%, 61%, 0.815);
     border-radius: 25%;
 }
 
@@ -25,15 +43,15 @@
     display: block;
     color: black;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 0.1em;
 }
 
 .dropdown .content {
     display: none;
     position: absolute;
-    background-color: brown;
-    min-width: 100px;
-    box-shadow: 2px 2px 5px burlywood;
+    background-color: hsl(9, 100%, 64%);
+    box-shadow: 2px 2px 5px tomato;
+    margin: 0.5em;
 }
 
 .dropdown:hover .content {
@@ -41,29 +59,82 @@
 }
 
 .dropdown:hover button {
-    background-color: hsl(0, 0, 70%);
+    background-color: hsla(9, 100%, 64%, 0.048);
 }
 
-.dropdown a:hover{
-    background-color: rgb(255, 208, 0);
+.dropdown a:hover {
+    background-color: hsla(56, 89%, 56%, 0.829);
 }
 
-img {
-    display: block;
-    width: 75vw;
-    margin: auto;
-}
-
-iframe {
+#band-photo {
     display: block;
     width: 95vw;
     margin: auto;
+    border-radius: 15%;
+    border: solid tomato;
+    border-radius: 5%;
+}
+
+p {
+    display: inline-block;
+    padding: 0.5em 1em 1em;
+    text-align: justify;
+}
+
+#main-section-media {
+    width: 90vw;
+    margin: 0.5em;
+    border: solid tomato;
+    border-radius: 5%;
+}
+
+iframe {
+    size: 50%;
+    margin-bottom: 1em;
+    border: solid tomato;
+    border-radius: 5%;
+}
+
+#first-comeback-photo {
+    width: 90vw;
+    border: solid tomato;
+    border-radius: 5%;
+}
+
+#band-members-div {
+    display: inline-block;
+}
+
+#band-member-img {
+    display: block;
+    width: 50vw;
+    margin: auto;
+    border-radius: 15%;
+    padding: 0.5em;
 }
 
 #singer-description {
     text-align: center;
 }
 
-#band-member-img {
-    width: 25vw;
+#world-tour-ol li{
+    padding: 0.5em;
+}
+
+#contact {
+    font-size: 16px;
+}
+
+#contact-text {
+    text-align: justify;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Here I chose to leave the text decoration for reasons of accessibility if someone doesn`t know if these are clickable */
+#footer-link {
+    text-decoration: 2px solid;
+    text-decoration-color: teal;
+    font-weight: bold;
+    color: tomato;
 }
